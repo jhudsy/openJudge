@@ -20,4 +20,4 @@ def main():
     tools.section('Setting Up Openjudge')
     tools.setup_contest()
     tools.section('Starting Webserver')
-    app.run(host=ip, port=port, debug=True)
+    app.run(host=ip, port=port,server="paste", debug=True)
