@@ -192,7 +192,7 @@ $( document ).ready(function() {
             $("#leader_table").html('');  // clear the table
             var table = $("#leader_table");
             for(d of data.leader){
-                var person = $("<tr><td>"+d[1]+"</td><td>"+d[0]+"</td></tr>");
+                var person = $("<tr><td>"+d[1]+"</td><td>"+d[0].toFixed(3)+"</td></tr>");
                 table.append(person);
             }
         });
